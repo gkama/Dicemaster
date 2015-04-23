@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="animations.animations">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="21" />
+  <application android:label="Dice Master" android:icon="@drawable/dice" android:name="mono.android.app.Application">
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:launchMode="singleInstance" android:screenOrientation="portrait" android:name="dicemaster.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.RegularDiceActivity" />
+    <activity android:label="MDGActivity" android:screenOrientation="portrait" android:name="dicemaster.MDGActivity" />
+    <activity android:label="HLDGActivity" android:screenOrientation="portrait" android:name="dicemaster.HLDGActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.HighLowDiceActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:launchMode="singleInstance" android:screenOrientation="portrait" android:name="dicemaster.DiceCategoriesActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.DiceActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.ChuckALuckActivity" />
+    <activity android:label="CALDGActivity" android:screenOrientation="portrait" android:name="dicemaster.CALDGActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.AboutActivity" />
+    <activity android:icon="@drawable/dice" android:label="Dice Master" android:screenOrientation="portrait" android:name="dicemaster.StatsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="animations.animations.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

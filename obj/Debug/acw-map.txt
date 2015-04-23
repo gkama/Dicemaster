@@ -1,0 +1,11 @@
+Dicemaster.MainActivity;dicemaster.MainActivity
+Dicemaster.RegularDiceActivity;dicemaster.RegularDiceActivity
+Dicemaster.MDGActivity;dicemaster.MDGActivity
+Dicemaster.HLDGActivity;dicemaster.HLDGActivity
+Dicemaster.HighLowDiceActivity;dicemaster.HighLowDiceActivity
+Dicemaster.DiceCategoriesActivity;dicemaster.DiceCategoriesActivity
+Dicemaster.DiceActivity;dicemaster.DiceActivity
+Dicemaster.ChuckALuckActivity;dicemaster.ChuckALuckActivity
+Dicemaster.CALDGActivity;dicemaster.CALDGActivity
+Dicemaster.AboutActivity;dicemaster.AboutActivity
+Dicemaster.StatsActivity;dicemaster.StatsActivity

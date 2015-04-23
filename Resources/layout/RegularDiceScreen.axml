@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Space
+            android:layout_height="match_parent"
+            android:id="@+id/space1"
+            android:layout_width="1dp" />
+        <TextView
+            android:text="Regular Die: 1-6"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/regulardieText"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <Button
+            android:text="Roll the die"
+            android:textStyle="bold"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:id="@+id/diceButton"
+            style="@style/grey_button"
+            android:gravity="center"
+            android:background="@drawable/greybutton" />
+        <TextView
+            android:text="Rolls: 0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/rollsText"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="370dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/numberResult"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

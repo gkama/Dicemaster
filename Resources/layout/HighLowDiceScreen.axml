@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/amountLayout"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:src="@drawable/dollarsign"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/moneyImage"
+                android:layout_gravity="right" />
+            <TextView
+                android:text="Total Amount: $"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/enteramountText"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <EditText
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentAmount"
+                android:maxLength="9"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff00fff5"
+                android:selectAllOnFocus="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/bettingLayout"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:src="@drawable/dollarsign"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/moneyImage"
+                android:layout_gravity="right" />
+            <TextView
+                android:text="        Enter Bet: $"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/enteramountText"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <EditText
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/betAmount"
+                android:maxLength="9"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ff00fff5"
+                android:selectAllOnFocus="true" />
+        </LinearLayout>
+        <TextView
+            android:text="High-Low Dice: 1-6 for both"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/highlowdieText"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxLayout"
+            android:layout_gravity="center"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginBottom="10dp">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/bettingRadioButtons">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="High"
+                    android:id="@+id/highRadioButton"
+                    android:textColor="#ff00fff5" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seven"
+                    android:id="@+id/sevenRadioButton"
+                    android:textColor="#ff00fff5" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:id="@+id/lowRadioButton"
+                    android:textColor="#ff00fff5" />
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:text="Roll the dice"
+            android:textStyle="bold"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:id="@+id/diceButton"
+            style="@style/grey_button"
+            android:gravity="center"
+            android:background="@drawable/greybutton" />
+        <TextView
+            android:text="Current Amount!"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentAmountText"
+            android:layout_gravity="center"
+            android:textColor="#ff00fff5" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/numberResult1"
+            android:gravity="center"
+            android:layout_gravity="center" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/numberResult2"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumRoll"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ff00fff5" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highlowText"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="#ff00fff5" />
+</LinearLayout>

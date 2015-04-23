@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/darkdice">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:id="@+id/dicemasterTitle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:text="Dice Master" />
+    <TextView
+        android:text="By Georgi Kamacharov"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_marginBottom="15dp" />
+    <Button
+        android:text="Regular Die"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/taketoRegularDiceGameButton"
+        android:background="@drawable/greybutton"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        style="@style/grey_button"
+        android:capitalize="none" />
+    <Button
+        android:text="Matching Dice Game"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/taketoDiceButton"
+        android:background="@drawable/greybutton"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        style="@style/grey_button" />
+    <Button
+        android:text="High-Low Dice Game"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/taketoHighLowDieGameButton"
+        android:background="@drawable/greybutton"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        style="@style/grey_button" />
+    <Button
+        android:text="Chuck-A-Luck Dice Game"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/taketoChuckALuckGameButton"
+        android:background="@drawable/greybutton"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        style="@style/grey_button" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/space2" />
+    <Button
+        android:text="Stats"
+        android:id="@+id/statsButton"
+        style="@style/grey_button"
+        android:background="@drawable/statsbutton"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/space1" />
+    <Button
+        android:text="About"
+        android:textStyle="bold"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:id="@+id/aboutButton"
+        android:background="@drawable/greybutton"
+        android:layout_gravity="center"
+        style="@style/grey_button" />
+</LinearLayout>

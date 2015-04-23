@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="355dp"
+        android:layout_weight="1"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Matching Dice Game"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleText"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoryText"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center" />
+        <Button
+            android:text="Roll your die"
+            android:textStyle="bold"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:id="@+id/diceButton"
+            style="@style/grey_button"
+            android:gravity="center"
+            android:background="@drawable/greybutton" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="170dp"
+            android:layout_height="125dp"
+            android:id="@+id/numberResult"
+            android:gravity="center"
+            android:text="0" />
+    </LinearLayout>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/matchNumber"
+        android:layout_gravity="center"
+        android:textColor="#ff00fff5"
+        android:gravity="center" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/totalScore"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Total:" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/numberOfClicks"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Number of Clicks:" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/numberOfMatches"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:text="Number of Matches:" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{DD971F3C-D64A-47F2-B204-7DA914852DA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Dicemaster</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Dicemaster</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegularDieActivity.cs" />
+    <Compile Include="Stats\MDGActivity.cs" />
+    <Compile Include="Stats\HLDGActivity.cs" />
+    <Compile Include="HighLowDiceActivity.cs" />
+    <Compile Include="DiceCategoriesActivity.cs" />
+    <Compile Include="DiceActivity.cs" />
+    <Compile Include="ChuckALuckActivity.cs" />
+    <Compile Include="Stats\CALDGActivity.cs" />
+    <Compile Include="AboutActivity.cs" />
+    <Compile Include="Stats\StatsActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\layout\StatsScreen.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\StatsButton.xml" />
+    <AndroidResource Include="Resources\layout\HighLowDiceScreen.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\GreyButton.xml" />
+    <AndroidResource Include="Resources\layout\DiceScreen.axml" />
+    <AndroidResource Include="Resources\layout\DiceCategoriesScreen.axml" />
+    <AndroidResource Include="Resources\layout\ChuckALuckScreen.axml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Dice.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\darkdice.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\dollarsign.jpg" />
+    <AndroidResource Include="Resources\anim\Anim1.xml" />
+    <AndroidResource Include="Resources\anim\Anim2.xml" />
+    <AndroidResource Include="Resources\anim\Anim3.xml" />
+    <AndroidResource Include="Resources\anim\Anim4.xml" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\background.jpg" />
+    <AndroidResource Include="Resources\layout\AboutScreen.axml" />
+    <AndroidResource Include="Resources\layout\RegularDiceScreen.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Stats\" />
+    <Folder Include="Resources\anim\" />
+  </ItemGroup>
+</Project>
